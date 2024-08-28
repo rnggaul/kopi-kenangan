@@ -16,7 +16,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
   color: #fff !important;
-  min-height: 2000px;
+  min-height: 3000px;
 }
 
 /* navbar */
@@ -142,17 +142,17 @@ body {
 }
 
 /* About Section */
-.about{
+.about, .menu, .contact{ 
     padding: 8rem 7% 1.4rem;
 }
 
-.about h2{
+.about h2, .menu h2, .contact h2{
     text-align: center;
     font-size: 2.4rem ;
     margin-bottom: 3rem;
 }
 
-.about h2 span{
+.about h2 span, .menu h2 span, .contact h2 span{
     color: var(--primary);
 }
 
@@ -184,6 +184,42 @@ body {
     font-weight: 200;
     line-height: 1.6;
 }
+
+/* Menu Section*/
+.menu h2, .contact h2{
+    margin-bottom: 1rem ;
+}
+
+.menu p, .contact p{
+    text-align: center;
+    max-width: 28rem;
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.6rem;
+}
+
+.menu .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.menu .row .menu-card{
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.menu .row .menu-card img{
+    border-radius: 50%;
+    width: 80%;
+}
+
+.menu .row .menu-card .menu-card-title{
+    margin: 1.2rem auto 0.5rem;
+}
+
 
 /* Media Queries */
 
@@ -252,6 +288,10 @@ body {
   .about .row .content h3{
     margin-top: 1rem;
     font-size: 1.6rem;
+  }
+
+  .menu p{
+    font-size: 1.3rem;
   }
 }
 
