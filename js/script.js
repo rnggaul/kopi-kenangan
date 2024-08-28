@@ -1,4 +1,3 @@
-// memunculkan hamburger menu saat di click
 document.addEventListener('DOMContentLoaded', function() {
     const navbarNav = document.querySelector('.navbar-nav');
     const hamburgerMenu = document.querySelector('#hamburger-menu');
@@ -8,13 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
             navbarNav.classList.toggle('active');
         };
     }
-});
 
-
-// click di luar untuk menghilangkan sidebar
-const hamburger = document.querySelector('#hamburger-menu');
-document.addEventListener('click', function(e){
-   if(!hamburger.contains(e.target) && !navbarNav.contains(e.target)){
-        navbarNav.classList.remove('active');
-   } 
+    // click di luar untuk menghilangkan sidebar
+    document.addEventListener('click', function(e) {
+        if (!hamburgerMenu.contains(e.target) && !navbarNav.contains(e.target)) {
+            navbarNav.classList.remove('active');
+        }
+    });
 });
